@@ -25,7 +25,7 @@
 
 // learning .map function
 
-let numbers = [1,2,3,4,5,6,7];
-const double = (n) => n * 2;
-let newArr = numbers.map(double);
-console.log(newArr);
+// let numbers = [1,2,3,4,5,6,7];
+// const double = (n) => n * 2;
+// let newArr = numbers.map(double);
+// console.log(newArr);
