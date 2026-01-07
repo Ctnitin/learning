@@ -10,32 +10,32 @@
         <p class="paragraph">Welcome to my Website</p>
     </nav>
     <div class="block">
-        <h4 id="name-block">Hey, There my name is <span onclick="alert('hey this is Nitin Chauhan')" id="username">Piyush Garg</span> :) </h4>
+        <h4 id="name-block">Hey, There my name is <span id="username">Piyush Garg</span> :) </h4>
         <p class="block">Here is a code for you</p>
         <pre><code>console.log('Hey There')</code></pre>
     </div>
-    <button onclick="handleButtonClick()" >Through Function</menu></button>
-    <button id="clickButton">Through ID</button>
+    <!-- <button onclick="handleButtonClick()" >Through Function</menu></button>
+    <button id="clickButton">Through ID</button> -->
     <script>
-        function handleButtonClick(){
-            console.log("Button is clicked");
-            alert("hey! I am Clicked");
-        }
+        // function handleButtonClick(){
+        //     console.log("Button is clicked");
+        //     alert("hey! I am Clicked");
+        // }
 
-        const el = document.getElementById('clickButton');
-        function doSomething(){
-            console.log("Button with ID is clicked");
-            alert("hey! I am Clicked through ID");
-        }
-        el.addEventListener("click", doSomething);
+        // const el = document.getElementById('clickButton');
+        // function doSomething(){
+        //     console.log("Button with ID is clicked");
+        //     alert("hey! I am Clicked through ID");
+        // }
+        //el.addEventListener("click", doSomething);
 
         const nameBlock = document.getElementById('name-block')
-        nameBlock.style.color = "tomato";
-        el.addEventListener("click", function(){
-            if(nameBlock.style.color === "tomato"){
+        nameBlock.style.color = "black";
+        nameBlock.addEventListener("click", function(){
+            if(nameBlock.style.color === "black"){
                 nameBlock.style.color = "Blue";
             } else {
-                nameBlock.style.color = "tomato";
+                nameBlock.style.color = "black";
             }
         })
 

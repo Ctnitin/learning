@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="col" style="cursor: pointer;">Hello, kaise ho</h1>
+    <script>
+let black = "rgb(0, 0, 0)";
+let blue = "rgb(34, 148, 234)";
+const col = document.getElementById("col")
+col.style.color = "black"
+col.addEventListener("click", () => {
+if (col.style.color === black) {
+    col.style.color = blue; 
+  } else{
+    col.style.color = black; 
+  }
+});
+    </script>
+</body>
+</html>
